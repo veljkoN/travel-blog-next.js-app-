@@ -1,0 +1,24 @@
+@import '../../styles/variables/colors.scss';
+.asideBox {
+  width: 200px;
+  height: 100%;
+  margin:0 0.5rem;
+  background-color: $cardBGColor;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+  ul {
+    margin-left: 0rem;
+    list-style-type: none;
+    li a {
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
+      color: $textColor;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+  
+ 

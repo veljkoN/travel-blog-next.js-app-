@@ -1,0 +1,21 @@
+@import '../../styles/variables/colors.scss';
+.footer{
+  height: 100%;
+  background-color: $navFooter;
+  width: 100%;
+  ul {
+    margin-left: 2rem;
+    li {
+      list-style: none;
+      a {
+        display: block;
+        padding: 1em;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.2;
+        color: $cardBGColor;
+        text-decoration: none;
+      }
+    }
+  }
+}
