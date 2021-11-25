@@ -1,5 +1,6 @@
 import React from 'react' 
 import styles from './DestinationDetails.module.scss'
+import Image from 'next/image'
 import { getDestinationById } from '../../helpers/db-util'
 import { DestinationType } from '../index'
 import { db } from '../../db/db-config';
@@ -18,7 +19,14 @@ const DestinationDetails:React.FC<DestinationDetailsInterface> = ( props ) => {
     return (
         <div className={ styles.destinationDetailsBox }>
             <div className={ styles.card }>
-            <img className={ styles.cardImg } src={ `.${destination.image}` } alt={ destination.place } />
+            <Image 
+                className={ styles.cardImg } 
+                src={ destination.image } 
+                alt={ destination.place } 
+                width={ 1400 }
+                height={600}
+                //priority
+            />
                 <div className={ styles.cardContent }>
                     <h1 className={ styles.cardHeader }>{ destination.place }</h1>
                     <p className={ styles.cardText }>{ destination.description } </p>
